@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_smart_user/Providers/theme_provider.dart';
+import 'package:shop_smart_user/root_screens.dart';
 import 'consts/theme_data.dart';
-import 'screens/home_screen.dart';
 
 void main() {
   runApp(const ShopSmartApp());
@@ -23,7 +23,7 @@ class ShopSmartApp extends StatelessWidget {
           title: 'Shope Smart',
           theme: Style.themeData(
               isDarktheme: ThemeProvider.getDarkTheme, context: context),
-          home: const HomeScreen(),
+          home: const RootScreen(),
         );
       }),
     );
