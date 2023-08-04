@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: Image.asset(AssetsManger.shoppingCart),
-        title: const AppNameTextWidget(),
+        title: const AppNameTextWidget(title: 'Shop Smart',),
       ),
       body: SingleChildScrollView(
         child: Column(

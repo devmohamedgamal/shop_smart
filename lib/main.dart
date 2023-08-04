@@ -17,12 +17,12 @@ class ShopSmartApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
       ],
-      child: Consumer<ThemeProvider>(builder: (context, ThemeProvider, child) {
+      child: Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Shope Smart',
           theme: Style.themeData(
-              isDarktheme: ThemeProvider.getDarkTheme, context: context),
+              isDarktheme: themeProvider.getDarkTheme, context: context),
           home: const RootScreen(),
         );
       }),
